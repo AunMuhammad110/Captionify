@@ -137,15 +137,15 @@ const MainBody = () => {
         <Form.Item
           name="image"
           valuePropName="file"
-          rules={VALIDATION.REQUIRED}
+          rules={VALIDATION.REQUIRED_IMAGE}
           className="mb-12"
         >
           <DragDropImage onFileChange={handleImageChange} file={file} />
         </Form.Item>
-        <Form.Item name="vibe" rules={VALIDATION.REQUIRED}>
+        <Form.Item name="vibe" rules={VALIDATION.REQUIRED_VIBE}>
           <CustomSelect options={vibeOptions} className="w-full h-12" />
         </Form.Item>
-        <Form.Item name="language" rules={VALIDATION.REQUIRED}>
+        <Form.Item name="language" rules={VALIDATION.REQUIRED_LANGUAGE}>
           <CustomSelect
             onChange={() => {}}
             options={languageOptions}
